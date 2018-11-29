@@ -1,5 +1,6 @@
 import React from 'react';
 import PersonSearchForm from "./PersonSearchForm";
+import { Table } from 'react-materialize';
 
 class PersonSearchResult extends React.Component {
     render() {
@@ -7,14 +8,14 @@ class PersonSearchResult extends React.Component {
             return <PersonRow key={person.id} person={person}/>
         });
         return (
-            <table>
+            <Table hoverable="true">
                 <thead>
                     <PersonSearchHeader />
                 </thead>
                 <tbody>
                     {rows}
                 </tbody>
-            </table>
+            </Table>
         )
     }
 }

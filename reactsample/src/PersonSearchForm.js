@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input } from 'react-materialize';
 
 class PersonSearchForm extends React.Component {
 
@@ -9,8 +10,7 @@ class PersonSearchForm extends React.Component {
     render() {
         return (
             <div>
-                <span>Name: </span>
-                <input onKeyUp={this.onKeyUp}/>
+                <Input label="Name" onKeyUp={this.onKeyUp}/>
             </div>
         )
     }
