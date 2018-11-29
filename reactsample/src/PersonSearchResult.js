@@ -30,6 +30,9 @@ function PersonSearchHeader() {
 }
 
 const PersonRow = (props) => {
+    if (props.person.name === 'XXX1') {
+        throw new Error('I crashed');
+    }
     return (
         <tr>
             <td>{props.person.id}</td>
